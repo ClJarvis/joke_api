@@ -13,6 +13,7 @@ async function generateJokes(){
 	const data = await res.json();
 	console.log(data);
 	console.log(data.joke);
+	console.log(data.setup);
 	console.log(data.delivery);
 	let joke = ""
 	if (data.joke == undefined) {
